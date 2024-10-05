@@ -1,0 +1,16 @@
+body{
+    background: #333;
+}
+#searchForm{
+    text-align: center;
+}
+#searchForm input{
+    padding: 10px;
+    border-radius: 8px;
+}
+#searchForm button{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: chartreuse;
+    border: none;
+}
