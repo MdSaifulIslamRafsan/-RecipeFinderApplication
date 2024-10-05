@@ -1,0 +1,86 @@
+[
+    {
+      "dishName": "Spaghetti Carbonara",
+      "recipeImage": "https://example.com/spaghetti-carbonara.jpg",
+      "shortDescription": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "preparationTime": "15 minutes",
+      "cookingTime": "20 minutes",
+      "dietaryInformation": {
+        "vegetarian": false,
+        "glutenFree": false,
+        "dairyFree": false
+      }
+    },
+    {
+      "dishName": "Vegetable Stir Fry",
+      "recipeImage": "https://example.com/vegetable-stir-fry.jpg",
+      "shortDescription": "A quick and easy stir-fried dish loaded with fresh vegetables and soy sauce.",
+      "preparationTime": "10 minutes",
+      "cookingTime": "15 minutes",
+      "dietaryInformation": {
+        "vegetarian": true,
+        "glutenFree": true,
+        "dairyFree": true
+      }
+    },
+    {
+      "dishName": "Chicken Curry",
+      "recipeImage": "https://example.com/chicken-curry.jpg",
+      "shortDescription": "A rich and flavorful curry made with tender chicken and a blend of aromatic spices.",
+      "preparationTime": "20 minutes",
+      "cookingTime": "40 minutes",
+      "dietaryInformation": {
+        "vegetarian": false,
+        "glutenFree": true,
+        "dairyFree": true
+      }
+    },
+    {
+      "dishName": "Margarita Pizza",
+      "recipeImage": "https://example.com/margarita-pizza.jpg",
+      "shortDescription": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
+      "preparationTime": "30 minutes",
+      "cookingTime": "15 minutes",
+      "dietaryInformation": {
+        "vegetarian": true,
+        "glutenFree": false,
+        "dairyFree": false
+      }
+    },
+    {
+      "dishName": "Avocado Salad",
+      "recipeImage": "https://example.com/avocado-salad.jpg",
+      "shortDescription": "A refreshing salad with ripe avocados, cherry tomatoes, and a light vinaigrette.",
+      "preparationTime": "10 minutes",
+      "cookingTime": "0 minutes",
+      "dietaryInformation": {
+        "vegetarian": true,
+        "glutenFree": true,
+        "dairyFree": true
+      }
+    },
+    {
+      "dishName": "Beef Tacos",
+      "recipeImage": "https://example.com/beef-tacos.jpg",
+      "shortDescription": "Crunchy tacos filled with seasoned ground beef, lettuce, and cheese.",
+      "preparationTime": "15 minutes",
+      "cookingTime": "10 minutes",
+      "dietaryInformation": {
+        "vegetarian": false,
+        "glutenFree": true,
+        "dairyFree": false
+      }
+    },
+    {
+      "dishName": "Vegan Lentil Soup",
+      "recipeImage": "https://example.com/vegan-lentil-soup.jpg",
+      "shortDescription": "A hearty and nutritious soup made with lentils, vegetables, and spices.",
+      "preparationTime": "15 minutes",
+      "cookingTime": "30 minutes",
+      "dietaryInformation": {
+        "vegetarian": true,
+        "glutenFree": true,
+        "dairyFree": true
+      }
+    }
+  ]
