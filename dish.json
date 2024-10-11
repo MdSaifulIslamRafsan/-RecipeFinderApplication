@@ -1,86 +1,245 @@
 [
-    {
-      "dishName": "Spaghetti Carbonara",
-      "recipeImage": "https://example.com/spaghetti-carbonara.jpg",
-      "shortDescription": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-      "preparationTime": "15 minutes",
-      "cookingTime": "20 minutes",
-      "dietaryInformation": {
-        "vegetarian": false,
-        "glutenFree": false,
-        "dairyFree": false
-      }
+  {
+    "id": 1,
+    "dishName": "Vegan Avocado Toast",
+    "recipeImage": "https://example.com/avocado-toast.jpg",
+    "shortDescription": "A healthy and easy-to-make avocado toast, perfect for breakfast.",
+    "preparationTime": "5 mins",
+    "cookingTime": "0 mins",
+    "dietaryInfo": "Vegan",
+    "ingredients": [
+      "1 ripe avocado",
+      "2 slices of whole grain bread",
+      "Salt and pepper to taste",
+      "Lemon juice",
+      "Chili flakes (optional)"
+    ],
+    "instructions": [
+      "Toast the bread slices.",
+      "Mash the avocado in a bowl and add lemon juice, salt, and pepper.",
+      "Spread the mashed avocado on the toasted bread.",
+      "Sprinkle chili flakes on top for added spice (optional)."
+    ],
+    "nutrition": {
+      "calories": "250",
+      "fat": "15g",
+      "protein": "6g",
+      "carbohydrates": "30g"
     },
-    {
-      "dishName": "Vegetable Stir Fry",
-      "recipeImage": "https://example.com/vegetable-stir-fry.jpg",
-      "shortDescription": "A quick and easy stir-fried dish loaded with fresh vegetables and soy sauce.",
-      "preparationTime": "10 minutes",
-      "cookingTime": "15 minutes",
-      "dietaryInformation": {
-        "vegetarian": true,
-        "glutenFree": true,
-        "dairyFree": true
-      }
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "dishName": "Gluten-Free Pancakes",
+    "recipeImage": "https://example.com/gluten-free-pancakes.jpg",
+    "shortDescription": "Fluffy gluten-free pancakes that are easy to make and delicious.",
+    "preparationTime": "10 mins",
+    "cookingTime": "20 mins",
+    "dietaryInfo": "Gluten-Free",
+    "ingredients": [
+      "1 cup gluten-free flour",
+      "1 tablespoon sugar",
+      "1 teaspoon baking powder",
+      "1 egg",
+      "1 cup milk",
+      "2 tablespoons melted butter",
+      "1 teaspoon vanilla extract"
+    ],
+    "instructions": [
+      "In a bowl, whisk together the flour, sugar, and baking powder.",
+      "In a separate bowl, whisk the egg, milk, melted butter, and vanilla extract.",
+      "Combine the wet and dry ingredients and stir until just mixed.",
+      "Heat a non-stick pan and pour batter to form pancakes.",
+      "Cook until bubbles appear, then flip and cook until golden brown."
+    ],
+    "nutrition": {
+      "calories": "300",
+      "fat": "12g",
+      "protein": "8g",
+      "carbohydrates": "40g"
     },
-    {
-      "dishName": "Chicken Curry",
-      "recipeImage": "https://example.com/chicken-curry.jpg",
-      "shortDescription": "A rich and flavorful curry made with tender chicken and a blend of aromatic spices.",
-      "preparationTime": "20 minutes",
-      "cookingTime": "40 minutes",
-      "dietaryInformation": {
-        "vegetarian": false,
-        "glutenFree": true,
-        "dairyFree": true
-      }
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "dishName": "Vegetarian Pasta Salad",
+    "recipeImage": "https://example.com/vegetarian-pasta-salad.jpg",
+    "shortDescription": "A refreshing pasta salad with vegetables and a light dressing.",
+    "preparationTime": "15 mins",
+    "cookingTime": "10 mins",
+    "dietaryInfo": "Vegetarian",
+    "ingredients": [
+      "200g pasta",
+      "1 cucumber, diced",
+      "1 red bell pepper, diced",
+      "1/4 cup feta cheese",
+      "2 tablespoons olive oil",
+      "1 tablespoon balsamic vinegar",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Cook the pasta according to package instructions and drain.",
+      "Mix the pasta, cucumber, and red bell pepper in a large bowl.",
+      "Whisk olive oil, balsamic vinegar, salt, and pepper in a separate bowl.",
+      "Pour dressing over the salad and toss well.",
+      "Top with feta cheese before serving."
+    ],
+    "nutrition": {
+      "calories": "350",
+      "fat": "14g",
+      "protein": "10g",
+      "carbohydrates": "45g"
     },
-    {
-      "dishName": "Margarita Pizza",
-      "recipeImage": "https://example.com/margarita-pizza.jpg",
-      "shortDescription": "A simple yet delicious pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
-      "preparationTime": "30 minutes",
-      "cookingTime": "15 minutes",
-      "dietaryInformation": {
-        "vegetarian": true,
-        "glutenFree": false,
-        "dairyFree": false
-      }
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "dishName": "Chicken Stir Fry",
+    "recipeImage": "https://example.com/chicken-stir-fry.jpg",
+    "shortDescription": "Quick and easy chicken stir fry with vegetables and soy sauce.",
+    "preparationTime": "10 mins",
+    "cookingTime": "15 mins",
+    "dietaryInfo": "Non-Vegetarian",
+    "ingredients": [
+      "200g chicken breast, sliced",
+      "1 bell pepper, sliced",
+      "1 carrot, julienned",
+      "2 tablespoons soy sauce",
+      "1 tablespoon olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Heat olive oil in a pan and cook the chicken until browned.",
+      "Add vegetables and stir-fry for 5-7 minutes.",
+      "Add soy sauce and cook for another 2 minutes.",
+      "Serve hot with rice or noodles."
+    ],
+    "nutrition": {
+      "calories": "400",
+      "fat": "15g",
+      "protein": "30g",
+      "carbohydrates": "20g"
     },
-    {
-      "dishName": "Avocado Salad",
-      "recipeImage": "https://example.com/avocado-salad.jpg",
-      "shortDescription": "A refreshing salad with ripe avocados, cherry tomatoes, and a light vinaigrette.",
-      "preparationTime": "10 minutes",
-      "cookingTime": "0 minutes",
-      "dietaryInformation": {
-        "vegetarian": true,
-        "glutenFree": true,
-        "dairyFree": true
-      }
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "dishName": "Vegan Tofu Stir Fry",
+    "recipeImage": "https://example.com/tofu-stir-fry.jpg",
+    "shortDescription": "A delicious tofu stir fry with bell peppers and soy sauce.",
+    "preparationTime": "10 mins",
+    "cookingTime": "15 mins",
+    "dietaryInfo": "Vegan",
+    "ingredients": [
+      "200g tofu, cubed",
+      "1 red bell pepper, sliced",
+      "1 zucchini, sliced",
+      "2 tablespoons soy sauce",
+      "1 tablespoon sesame oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Heat sesame oil in a pan and cook tofu until crispy.",
+      "Add vegetables and stir-fry for 5 minutes.",
+      "Add soy sauce and cook for another 3 minutes.",
+      "Serve hot with rice."
+    ],
+    "nutrition": {
+      "calories": "320",
+      "fat": "18g",
+      "protein": "16g",
+      "carbohydrates": "25g"
     },
-    {
-      "dishName": "Beef Tacos",
-      "recipeImage": "https://example.com/beef-tacos.jpg",
-      "shortDescription": "Crunchy tacos filled with seasoned ground beef, lettuce, and cheese.",
-      "preparationTime": "15 minutes",
-      "cookingTime": "10 minutes",
-      "dietaryInformation": {
-        "vegetarian": false,
-        "glutenFree": true,
-        "dairyFree": false
-      }
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "dishName": "Vegetarian Pizza",
+    "recipeImage": "https://example.com/vegetarian-pizza.jpg",
+    "shortDescription": "A homemade vegetarian pizza with fresh vegetables and mozzarella cheese.",
+    "preparationTime": "15 mins",
+    "cookingTime": "20 mins",
+    "dietaryInfo": "Vegetarian",
+    "ingredients": [
+      "Pizza dough",
+      "1 cup marinara sauce",
+      "1/2 cup mozzarella cheese",
+      "1 bell pepper, sliced",
+      "1/2 cup mushrooms, sliced",
+      "1/4 cup black olives"
+    ],
+    "instructions": [
+      "Spread marinara sauce on the pizza dough.",
+      "Top with mozzarella cheese, vegetables, and olives.",
+      "Bake in a preheated oven at 400°F for 15-20 minutes.",
+      "Serve hot."
+    ],
+    "nutrition": {
+      "calories": "450",
+      "fat": "18g",
+      "protein": "20g",
+      "carbohydrates": "55g"
     },
-    {
-      "dishName": "Vegan Lentil Soup",
-      "recipeImage": "https://example.com/vegan-lentil-soup.jpg",
-      "shortDescription": "A hearty and nutritious soup made with lentils, vegetables, and spices.",
-      "preparationTime": "15 minutes",
-      "cookingTime": "30 minutes",
-      "dietaryInformation": {
-        "vegetarian": true,
-        "glutenFree": true,
-        "dairyFree": true
-      }
-    }
-  ]
+    "rating": 4.6
+  },
+  {
+    "id": 7,
+    "dishName": "Classic Beef Burger",
+    "recipeImage": "https://example.com/classic-beef-burger.jpg",
+    "shortDescription": "Juicy beef burger with cheese, lettuce, tomato, and pickles.",
+    "preparationTime": "10 mins",
+    "cookingTime": "15 mins",
+    "dietaryInfo": "Non-Vegetarian",
+    "ingredients": [
+      "200g ground beef",
+      "1 hamburger bun",
+      "1 slice cheddar cheese",
+      "Lettuce",
+      "Tomato slices",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions": [
+      "Shape the beef into a patty and cook on a grill for 5-7 minutes per side.",
+      "Toast the bun and assemble the burger with cheese, lettuce, tomato, and pickles.",
+      "Add ketchup and mustard to taste."
+    ],
+    "nutrition": {
+      "calories": "500",
+      "fat": "25g",
+      "protein": "30g",
+      "carbohydrates": "40g"
+    },
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "dishName": "Gluten-Free Brownies",
+    "recipeImage": "https://example.com/gluten-free-brownies.jpg",
+    "shortDescription": "Rich and fudgy gluten-free brownies made with almond flour.",
+    "preparationTime": "15 mins",
+    "cookingTime": "25 mins",
+    "dietaryInfo": "Gluten-Free",
+    "ingredients": [
+      "1 cup almond flour",
+      "1/2 cup cocoa powder",
+      "1/2 cup sugar",
+      "1/4 cup melted butter",
+      "2 eggs",
+      "1 teaspoon vanilla extract"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F.",
+      "Mix all ingredients in a bowl until smooth.",
+      "Pour the batter into a greased baking pan.",
+      "Bake for 25 minutes or until a toothpick comes out clean."
+    ],
+    "nutrition": {
+      "calories": "200",
+      "fat": "12g",
+      "protein": "5g",
+      "carbohydrates": "25g"
+    },
+    "rating": 4.8
+  }
+]
