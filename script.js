@@ -2,15 +2,22 @@ const searchForm = document.getElementById("searchForm");
 const searchInput = document.getElementById("searchInput");
 const dishContainer = document.getElementById("dish-container");
 let allDishes = [];
-searchForm.addEventListener('submit', (e) => {
-        e.preventDefault();  
-      
-        const query = searchInput.value.toLowerCase();
+const performSearch = () => {
+    const query = searchInput.value.toLowerCase();
         const filteredDishes  = allDishes.filter(dish => dish?.dishName.toLowerCase().includes(query))
         console.log(filteredDishes)
         showDishCard(filteredDishes)
-       
-     
+}
+searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();  
+        performSearch();
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault(); 
+            performSearch(); 
+        }
     });
 
     async function getDishData(){
