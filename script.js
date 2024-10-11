@@ -1,23 +1,31 @@
 const searchForm = document.getElementById("searchForm"); 
-const dishContainer = document.getElementById("dish-container")
+const searchInput = document.getElementById("searchInput");
+const dishContainer = document.getElementById("dish-container");
+let allDishes = [];
 searchForm.addEventListener('submit', (e) => {
         e.preventDefault();  
+      
+        const query = searchInput.value.toLowerCase();
+        const filteredDishes  = allDishes.filter(dish => dish?.dishName.toLowerCase().includes(query))
+        console.log(filteredDishes)
+        showDishCard(filteredDishes)
+       
+     
     });
 
     async function getDishData(){
         const res = await fetch('./dish.json')
         const data = await res.json();
+        allDishes = data;
         showDishCard(data)
-
-
     }
     getDishData()
 
 function showDishCard(dishData){
+       dishContainer.innerHTML = ""
     dishData.forEach(data => {
         const div = document.createElement('div');
         div.classList.add('card')
-        console.log(data);
         div.innerHTML = `
         <img src=${data?.recipeImage} alt=${data?.dishName}/>
         <h2>${data?.dishName}</h2>
@@ -29,3 +37,5 @@ function showDishCard(dishData){
         
     });
 }
+
+
