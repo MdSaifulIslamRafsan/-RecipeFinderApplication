@@ -6,7 +6,6 @@ let allDishes = [];
 const performSearch = () => {
     const query = searchInput.value.toLowerCase();
         const filteredDishes  = allDishes.filter(dish => dish?.dishName.toLowerCase().includes(query))
-        console.log(filteredDishes)
         showDishCard(filteredDishes)
 }
 searchForm.addEventListener('submit', (e) => {
@@ -25,7 +24,7 @@ searchForm.addEventListener('submit', (e) => {
         const res = await fetch('./dish.json')
         const data = await res.json();
         allDishes = data;
-        showDishCard(data)
+        showDishCard(allDishes)
     }
     getDishData()
 
@@ -35,8 +34,8 @@ function showDishCard(dishData){
         const div = document.createElement('div');
         div.classList.add('card')
         div.innerHTML = `
-        <img src=${data?.recipeImage} alt=${data?.dishName}/>
-        <h2>${data?.dishName}</h2>
+        <img src="${data?.recipeImage}" alt=${data?.dishName}/>
+        <h3>${data?.dishName}</h3>
         <p>${data?.shortDescription}</p>
         <p>Cooking Time : ${data?.cookingTime}</p>
         <p>Preparation Time : ${data?.preparationTime}</p>

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "dishName": "Vegan Avocado Toast",
-    "recipeImage": "https://example.com/avocado-toast.jpg",
+    "recipeImage": "image/Vegan Avocado Toast.jfif",
     "shortDescription": "A healthy and easy-to-make avocado toast, perfect for breakfast.",
     "preparationTime": "5 mins",
     "cookingTime": "0 mins",
@@ -31,7 +31,7 @@
   {
     "id": 2,
     "dishName": "Gluten-Free Pancakes",
-    "recipeImage": "https://example.com/gluten-free-pancakes.jpg",
+    "recipeImage": "image/Gluten-Free Pancakes.jfif",
     "shortDescription": "Fluffy gluten-free pancakes that are easy to make and delicious.",
     "preparationTime": "10 mins",
     "cookingTime": "20 mins",
@@ -63,7 +63,7 @@
   {
     "id": 3,
     "dishName": "Vegetarian Pasta Salad",
-    "recipeImage": "https://example.com/vegetarian-pasta-salad.jpg",
+    "recipeImage": "image/Vegetarian Pasta Salad.jfif",
     "shortDescription": "A refreshing pasta salad with vegetables and a light dressing.",
     "preparationTime": "15 mins",
     "cookingTime": "10 mins",
@@ -95,7 +95,7 @@
   {
     "id": 4,
     "dishName": "Chicken Stir Fry",
-    "recipeImage": "https://example.com/chicken-stir-fry.jpg",
+    "recipeImage": "image/Chicken Stir Fry.jfif",
     "shortDescription": "Quick and easy chicken stir fry with vegetables and soy sauce.",
     "preparationTime": "10 mins",
     "cookingTime": "15 mins",
@@ -125,7 +125,7 @@
   {
     "id": 5,
     "dishName": "Vegan Tofu Stir Fry",
-    "recipeImage": "https://example.com/tofu-stir-fry.jpg",
+    "recipeImage": "image/Vegan Tofu Stir Fry.jfif",
     "shortDescription": "A delicious tofu stir fry with bell peppers and soy sauce.",
     "preparationTime": "10 mins",
     "cookingTime": "15 mins",
@@ -155,7 +155,7 @@
   {
     "id": 6,
     "dishName": "Vegetarian Pizza",
-    "recipeImage": "https://example.com/vegetarian-pizza.jpg",
+    "recipeImage": "image/Vegetarian Pizza.jfif",
     "shortDescription": "A homemade vegetarian pizza with fresh vegetables and mozzarella cheese.",
     "preparationTime": "15 mins",
     "cookingTime": "20 mins",
@@ -185,7 +185,7 @@
   {
     "id": 7,
     "dishName": "Classic Beef Burger",
-    "recipeImage": "https://example.com/classic-beef-burger.jpg",
+    "recipeImage": "image/Classic Beef Burger.jfif",
     "shortDescription": "Juicy beef burger with cheese, lettuce, tomato, and pickles.",
     "preparationTime": "10 mins",
     "cookingTime": "15 mins",
@@ -215,7 +215,7 @@
   {
     "id": 8,
     "dishName": "Gluten-Free Brownies",
-    "recipeImage": "https://example.com/gluten-free-brownies.jpg",
+    "recipeImage": "image/Gluten-Free Brownies.jfif",
     "shortDescription": "Rich and fudgy gluten-free brownies made with almond flour.",
     "preparationTime": "15 mins",
     "cookingTime": "25 mins",
