@@ -12,11 +12,14 @@ const performSearch = () => {
 }
 MealType.addEventListener('click', ()=>{
     const selectedMealType = MealType.value;
-    if (!selectedMealType) {
+    if (selectedMealType) {
+        const filteredDishes  = allDishes.filter(dish => dish?.mealType.toLowerCase() === selectedMealType) 
         showDishCard(filteredDishes)
+    }else{
+        showDishCard(allDishes);
     }
-    const filteredDishes  = allDishes.filter(dish => dish?.mealType.toLowerCase() === selectedMealType) 
-    showDishCard(filteredDishes)
+    
+   
 })
 searchForm.addEventListener('submit', (e) => {
         e.preventDefault();  
@@ -39,6 +42,8 @@ searchForm.addEventListener('submit', (e) => {
     getDishData()
 
 function showDishCard(dishData){
+    console.log(dishData);
+    
        dishContainer.innerHTML = ""
     dishData.forEach(data => {
         const div = document.createElement('div');
