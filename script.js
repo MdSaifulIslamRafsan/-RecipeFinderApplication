@@ -42,23 +42,29 @@ searchForm.addEventListener('submit', (e) => {
     getDishData()
 
 function showDishCard(dishData){
-    console.log(dishData);
-    
-       dishContainer.innerHTML = ""
-    dishData.forEach(data => {
-        const div = document.createElement('div');
-        div.classList.add('card')
-        div.innerHTML = `
-        <img src="${data?.recipeImage}" alt=${data?.dishName}/>
-        <h3>${data?.dishName}</h3>
-        <p>${data?.shortDescription}</p>
-        <p>Cooking Time : ${data?.cookingTime}</p>
-        <p>Preparation Time : ${data?.preparationTime}</p>
-        <button onclick="showRecipeDetails('${data?.id}')">Details</button>
-        `
-        dishContainer.appendChild(div)
-        
-    });
+     dishContainer.innerHTML = ""
+    if(dishData.length === 0){
+        const h3 = document.createElement('h3');
+        h3.innerText =  "No recipes found. Try another search."
+        dishContainer.style.display = "block"
+        dishContainer.appendChild(h3)
+    }else{
+        dishContainer.style.display = "grid"
+        dishData.forEach(data => {
+            const div = document.createElement('div');
+            div.classList.add('card')
+            div.innerHTML = `
+            <img src="${data?.recipeImage}" alt=${data?.dishName}/>
+            <h3>${data?.dishName}</h3>
+            <p>${data?.shortDescription}</p>
+            <p>Cooking Time : ${data?.cookingTime}</p>
+            <p>Preparation Time : ${data?.preparationTime}</p>
+            <button onclick="showRecipeDetails('${data?.id}')">Details</button>
+            `
+            dishContainer.appendChild(div)
+            
+        });
+    }
 }
 
 

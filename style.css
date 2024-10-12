@@ -1,9 +1,13 @@
 body{
     background: #333;
+    
 }
 #searchForm{
     text-align: center;
     margin-top: 20px;
+}
+h3{
+    color: white;
 }
 #searchForm input{
     padding: 15px;
@@ -24,7 +28,6 @@ img{
    padding: 10px 5px;
 }
 #dish-container{
-    display: grid;
     margin-top: 30px;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
