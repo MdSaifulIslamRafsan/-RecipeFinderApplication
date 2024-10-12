@@ -26,7 +26,8 @@
       "protein": "6g",
       "carbohydrates": "30g"
     },
-    "rating": 4.8
+    "rating": 4.8,
+    "mealType": "Breakfast"
   },
   {
     "id": 2,
@@ -58,7 +59,8 @@
       "protein": "8g",
       "carbohydrates": "40g"
     },
-    "rating": 4.6
+    "rating": 4.6,
+    "mealType": "Breakfast"
   },
   {
     "id": 3,
@@ -90,7 +92,8 @@
       "protein": "10g",
       "carbohydrates": "45g"
     },
-    "rating": 4.7
+    "rating": 4.7,
+    "mealType": "Lunch"
   },
   {
     "id": 4,
@@ -120,7 +123,8 @@
       "protein": "30g",
       "carbohydrates": "20g"
     },
-    "rating": 4.5
+    "rating": 4.5,
+    "mealType": "Dinner"
   },
   {
     "id": 5,
@@ -150,7 +154,8 @@
       "protein": "16g",
       "carbohydrates": "25g"
     },
-    "rating": 4.9
+    "rating": 4.9,
+    "mealType": "Dinner"
   },
   {
     "id": 6,
@@ -180,7 +185,8 @@
       "protein": "20g",
       "carbohydrates": "55g"
     },
-    "rating": 4.6
+    "rating": 4.6,
+    "mealType": "Dinner"
   },
   {
     "id": 7,
@@ -210,7 +216,8 @@
       "protein": "30g",
       "carbohydrates": "40g"
     },
-    "rating": 4.4
+    "rating": 4.4,
+    "mealType": "Lunch"
   },
   {
     "id": 8,
@@ -231,15 +238,17 @@
     "instructions": [
       "Preheat oven to 350°F.",
       "Mix all ingredients in a bowl until smooth.",
-      "Pour the batter into a greased baking pan.",
-      "Bake for 25 minutes or until a toothpick comes out clean."
+      "Pour the batter into a greased baking dish.",
+      "Bake for 25 minutes until set.",
+      "Let cool before cutting into squares."
     ],
     "nutrition": {
-      "calories": "200",
-      "fat": "12g",
-      "protein": "5g",
+      "calories": "300",
+      "fat": "20g",
+      "protein": "8g",
       "carbohydrates": "25g"
     },
-    "rating": 4.8
+    "rating": 4.8,
+    "mealType": "Snack"
   }
 ]

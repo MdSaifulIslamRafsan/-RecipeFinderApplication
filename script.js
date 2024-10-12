@@ -60,7 +60,7 @@ function showRecipeDetails(recipeId) {
                     <p><strong>Preparation Time:</strong> ${recipe.preparationTime}</p>
                     <p><strong>Cooking Time:</strong> ${recipe.cookingTime}</p>
                     <p><strong>Dietary Info:</strong> ${recipe.dietaryInfo}</p>
-
+                     <p><strong>Meal Type:</strong> ${recipe.mealType}</p> 
                     <h3>Ingredients:</h3>
                     <ul>
                         ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
