@@ -1,13 +1,23 @@
 const searchForm = document.getElementById("searchForm"); 
 const searchInput = document.getElementById("searchInput");
 const dishContainer = document.getElementById("dish-container");
+const MealType = document.getElementById("MealType");
 const recipeContainer = document.getElementById("recipe-container");
+const searchContainer = document.querySelector(".search-container");
 let allDishes = [];
 const performSearch = () => {
     const query = searchInput.value.toLowerCase();
-        const filteredDishes  = allDishes.filter(dish => dish?.dishName.toLowerCase().includes(query))
+        const filteredDishes  = allDishes.filter(dish => dish?.dishName.toLowerCase().includes(query)) 
         showDishCard(filteredDishes)
 }
+MealType.addEventListener('click', ()=>{
+    const selectedMealType = MealType.value;
+    if (!selectedMealType) {
+        showDishCard(filteredDishes)
+    }
+    const filteredDishes  = allDishes.filter(dish => dish?.mealType.toLowerCase() === selectedMealType) 
+    showDishCard(filteredDishes)
+})
 searchForm.addEventListener('submit', (e) => {
         e.preventDefault();  
         performSearch();
@@ -16,7 +26,7 @@ searchForm.addEventListener('submit', (e) => {
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === "Enter") {
             e.preventDefault(); 
-            performSearch(); 
+            performSearch(allDishes); 
         }
     });
 
@@ -48,7 +58,7 @@ function showDishCard(dishData){
 
 
 function showRecipeDetails(recipeId) {
-        searchForm.classList.add("hidden")
+    searchContainer.classList.add("hidden")
         const recipe = allDishes.find(r => r.id === parseInt(recipeId));
         dishContainer.innerHTML = ""
         if (recipe) {
@@ -83,7 +93,7 @@ function showRecipeDetails(recipeId) {
 
            
             document.getElementById('back-btn').addEventListener('click', () => {
-                searchForm.classList.remove("hidden")
+                searchContainer.classList.remove("hidden")
                 recipeContainer.innerHTML = ""
                 showDishCard(allDishes)
             });
